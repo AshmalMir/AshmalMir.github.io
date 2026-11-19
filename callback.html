@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login complete</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#222}
+textarea{width:100%;height:110px;font:13px monospace}button{padding:8px 14px;font-weight:600}</style>
+</head><body>
+<h1>Almost done</h1>
+<p>Copy this full address and paste it into the StreamCut terminal window.</p>
+<textarea id="u" readonly></textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('u').value);this.textContent='Copied'">Copy</button></p>
+<script>document.getElementById('u').value = location.href;</script>
+</body></html>
